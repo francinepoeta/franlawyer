@@ -42,7 +42,6 @@
         max-width: 95vw !important;
     }
 
-    /* Ajustar o menu para ficar centralizado abaixo da logo */
     header nav {
         margin-left: 0 !important;
         display: flex !important;
@@ -50,19 +49,21 @@
         gap: 2rem !important;
     }
 
-    /* Diminuir a foto profissional para 200px */
+    /* Foto profissional ajustada para 300px */
     main img[alt*="Advogada"], main img[alt*="Francine"] {
-        width: 200px !important;
-        height: 200px !important;
-        object-fit: cover !important;
-        border-radius: 50% !important; /* Circular fica mais harmônico em 200px */
+        width: 300px !important;
+        height: auto !important;
+        max-width: 100% !important;
+        border-radius: 12px !important; /* Voltando para bordas arredondadas clássicas em 300px */
         margin: 0 auto !important;
         display: block !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
     }
     
-    /* Ajustar o grid para centralizar o conteúdo no topo */
-    section#sobre .grid, section#sobre .container {
-        text-align: center !important;
+    /* Garantir que o texto não fique espremido */
+    section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
     }
   </style>
  </head>
